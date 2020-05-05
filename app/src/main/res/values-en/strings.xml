@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Radio Button Realisation With Checkboxes</string>
+    <string name="by_card">Card</string>
+    <string name="by_mobile_phone">Phone number</string>
+    <string name="by_cash">Cash</string>
+    <string name="choose_payment_method">Choose payment method:</string>
+    <string name="ok">OK</string>
+    <string name="credit_card_info">Enter the card number</string>
+    <string name="input_money">Enter sum</string>
+    <string name="toast_message">"
+        Payment method: %1$s;\n
+        %2$s: %3$s;\n
+        Entered sum: %4$s.
+    </string>
+    <string-array name="input_info_hint">
+        <item>Enter the card number</item>
+        <item>Enter the phone number</item>
+        <item>Enter the address</item>
+    </string-array>
+    <string-array name="payment_method_message">
+        <item>Card number</item>
+        <item>Phone number</item>
+        <item>Address</item>
+    </string-array>
+</resources>

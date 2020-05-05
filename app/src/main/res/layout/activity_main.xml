@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/choosePaymentMethodTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/choose_payment_method"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/byCardCheckboxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/by_card" />
+
+    <CheckBox
+        android:id="@+id/byPhoneCheckboxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/by_mobile_phone" />
+
+    <CheckBox
+        android:id="@+id/byCashCheckboxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/by_cash" />
+
+    <EditText
+        android:id="@+id/inputInfoEditTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/credit_card_info"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        android:autofillHints=".AUTOFILL_HINT_CREDIT_CARD_NUMBER" />
+
+    <EditText
+        android:id="@+id/inputMoneyEditTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/input_money"
+        android:inputType="numberDecimal"
+        android:visibility="invisible"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/okButtonId"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:drawable/btn_default"
+        android:backgroundTint="@android:color/holo_purple"
+        android:enabled="false"
+        android:text="@string/ok"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+</LinearLayout>
