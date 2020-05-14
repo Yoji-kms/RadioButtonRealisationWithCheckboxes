@@ -116,8 +116,8 @@ public class MainActivity extends AppCompatActivity {
         clearEditTextViews();
         inputInfoEditText.setInputType(InputType.TYPE_CLASS_NUMBER);
         paymentMethod = getText(R.string.by_card).toString();
-        paymentMethodMessage = getResources().getStringArray(R.array.payment_method_message)[0];
-        inputInfoEditTextHint = getResources().getStringArray(R.array.input_info_hint)[0];
+        paymentMethodMessage = getResources().getStringArray(R.array.payment_method_message)[PaymentMode.BY_CARD];
+        inputInfoEditTextHint = getResources().getStringArray(R.array.input_info_hint)[PaymentMode.BY_CARD];
         inputInfoEditText.setHint(inputInfoEditTextHint);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             inputInfoEditText.setAutofillHints(View.AUTOFILL_HINT_CREDIT_CARD_NUMBER);
@@ -130,8 +130,8 @@ public class MainActivity extends AppCompatActivity {
         clearEditTextViews();
         inputInfoEditText.setInputType(InputType.TYPE_CLASS_PHONE);
         paymentMethod = getText(R.string.by_mobile_phone).toString();
-        paymentMethodMessage = getResources().getStringArray(R.array.payment_method_message)[1];
-        inputInfoEditTextHint = getResources().getStringArray(R.array.input_info_hint)[1];
+        paymentMethodMessage = getResources().getStringArray(R.array.payment_method_message)[PaymentMode.BY_PHONE];
+        inputInfoEditTextHint = getResources().getStringArray(R.array.input_info_hint)[PaymentMode.BY_PHONE];
         inputInfoEditText.setHint(inputInfoEditTextHint);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             inputInfoEditText.setAutofillHints(View.AUTOFILL_HINT_PHONE);
@@ -144,8 +144,8 @@ public class MainActivity extends AppCompatActivity {
         clearEditTextViews();
         inputInfoEditText.setInputType(InputType.TYPE_CLASS_TEXT);
         paymentMethod = getText(R.string.by_cash).toString();
-        paymentMethodMessage = getResources().getStringArray(R.array.payment_method_message)[2];
-        inputInfoEditTextHint = getResources().getStringArray(R.array.input_info_hint)[2];
+        paymentMethodMessage = getResources().getStringArray(R.array.payment_method_message)[PaymentMode.BY_CASH];
+        inputInfoEditTextHint = getResources().getStringArray(R.array.input_info_hint)[PaymentMode.BY_CASH];
         inputInfoEditText.setHint(inputInfoEditTextHint);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             inputInfoEditText.setAutofillHints(View.AUTOFILL_HINT_POSTAL_ADDRESS);
