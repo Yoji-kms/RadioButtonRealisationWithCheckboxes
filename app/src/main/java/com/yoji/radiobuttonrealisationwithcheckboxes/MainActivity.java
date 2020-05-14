@@ -71,6 +71,12 @@ public class MainActivity extends AppCompatActivity {
         okButton.setVisibility(View.VISIBLE);
     }
 
+    private void setViewsInvisible() {
+        inputMoneyEditText.setVisibility(View.INVISIBLE);
+        inputInfoEditText.setVisibility(View.INVISIBLE);
+        okButton.setVisibility(View.INVISIBLE);
+    }
+
     View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -97,8 +103,10 @@ public class MainActivity extends AppCompatActivity {
                         byCashCheckboxAction();
                         break;
                 }
-                setViewsVisible();
             }
+            if (byCashCheckbox.isChecked() || byPhoneCheckbox.isChecked() || byCardCheckbox.isChecked()) {
+                setViewsVisible();
+            }else setViewsInvisible();
         }
     };
 
